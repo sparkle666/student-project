@@ -1,0 +1,51 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,400;1,500;1,600;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+  /* Disable right-clicking */
+  /* user-drag: none; */
+}
+
+/* Custom Components */
+
+/* .btn{
+  @apply bg-secondary outline-0 text-white px-[18px] py-[12px]
+} */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* HorizontalScrollCard.css */
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  /* Enable smooth scrolling */
+  transition: transform 0.5s ease;
+  /* Add a smooth transition effect on transform */
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  width: 300px;
+  /* Adjust the card width as needed */
+  background-color: #f0f0f0;
+  padding: 16px;
+  margin-right: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
